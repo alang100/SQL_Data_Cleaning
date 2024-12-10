@@ -1,10 +1,16 @@
+I have been using MS SQL extensively while working at DEWR for the past 12 months. I cannot showcase any of the SQL work I carry out there, so I have made a data cleaning project to demonstrate good working knowledge of data cleaning an untidy dataset in SQL and performing EDA (Exploratory Data Analysis) to reveal interesting and meaningful insights. This project was done using MySQL. In this repository, I have attached the original dataset, the SQL file containing my code and a PDF presentation which consists mainly of screenshots of the code combined with the output, so it is easier to follow the results, rather than just reading the code. They are available on the following links:
+
+1. The original dataset
+2. My SQL code, using MySQL
+3. The PDF presentation which mainly shows screenshots of the code along with the outputs
+
 # Data Cleaning and Analysis Using SQL
 
 ## Introduction
-Data cleaning is a critical step in the data analysis pipeline. This project demonstrates the process of cleaning a global layoffs dataset using SQL. The dataset includes information on layoffs by companies across the globe, covering attributes like company name, location, industry, total layoffs, and dates. The aim of the project is to transform the raw data into a clean, reliable, and usable dataset, ready for exploratory data analysis and insights generation.
+Data cleaning is a an important step in the data analysis pipeline. This project demonstrates the process of cleaning a global layoffs dataset using SQL. The dataset includes information on layoffs by companies across the globe, covering attributes like company name, location, industry, total layoffs, and dates. The aim of the project is to transform the raw data into a clean, reliable, and usable dataset, ready for exploratory data analysis and insights generation.
 
 ## Methodology
-This project involved four key steps:
+This data cleaning process involved four key steps:
 
 1. **Removing Duplicate Rows**  
    Duplicates were identified and removed to ensure data integrity. Special care was taken to preserve valid records of layoffs occurring on different dates or in different locations.
