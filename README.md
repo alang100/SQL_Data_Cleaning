@@ -1,4 +1,4 @@
-# SQL Data Cleaning
+# SQL Data Cleaning Project
 
 I have been using MS SQL extensively while working at DEWR for the past 12 months. I use SQL extensively at DEWR, but I cannot showcase any of the SQL work I carry out there. Most of the tables I use at work are of high quality with clean data. I thought it would be interesting to make cleaning project to demonstrate good working knowledge of data cleaning an untidy dataset in SQL and performing EDA (Exploratory Data Analysis) to reveal interesting and meaningful insights. This project was done using MySQL. There is only one table used in the project, so there are no joins involved, which is something I do regularly at work. I am planning on creating a more detailed SQL project in the near future.
 
