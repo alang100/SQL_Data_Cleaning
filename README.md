@@ -49,26 +49,6 @@ After cleaning the data, exploratory queries were conducted to discover insights
 - **Layoffs by Company:**  
   Amazon, Google, and Meta were the companies with the largest layoffs in this dataset.
 
-
-  ## Exploratory Data Analysis
-After the dataset was cleaned, several exploratory queries were performed to uncover insights:
-
-- **Key Metrics:**  
-  - Total layoffs: 383,659  
-  - Total funds raised: $1.601 billion  
-
-- **Trends Over Time:**  
-  Layoffs peaked in January 2023, with 84,714 layoffs. Other significant periods included November 2022 and February 2023.
-
-- **Industries Affected:**  
-  Consumer and Retail industries experienced the highest layoffs, with 44,782 and 43,613 layoffs, respectively. Manufacturing was the least impacted sector.
-
-- **Regional Impact:**  
-  The USA and India recorded the highest layoffs, which aligns with their large populations and workforce sizes.
-
-- **Top Companies by Layoffs:**  
-  Amazon, Google, and Meta were among the companies with the highest total layoffs.
-
 ## Major Insights
 - **COVID-19 Impact on Layoffs:**  
   The pandemic and consequent lockdowns significantly affected layoffs, especially in the industries of Consumer, Retail, and Technology.
