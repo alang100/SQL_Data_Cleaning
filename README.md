@@ -3,11 +3,13 @@ I have been using MS SQL extensively while working at DEWR for the past 12 month
 
 In this repository, I have attached the original dataset, the SQL file containing my code and a PDF presentation which consists mainly of screenshots of the code combined with the output, making it is easier for the viewer to follow the results, rather than just reading the code. They are available on the following links:
 
-1. The original dataset
-2. My SQL code, using MySQL
-3. The PDF presentation of the code along with the outputs
+- The [layoffs dataset](Covid19_layoffs.csv)
+- The [project SQL code](Data%20Cleaning%20Project%20and%20EDA%20-%20Layoffs%20CSV%20file.sql)
+- The [code presentation PDF](SQL%20Data%20Cleaning%20Project.pdf) file
 
-## Introduction
+---
+
+## Project Introduction
 Data cleaning is one of the most important steps in preparing data for meaningful analysis. This project focuses on cleaning a dataset of global layoffs during the COVID-19 pandemic using SQL, with the goal of transforming raw, messy data into a clean and reliable dataset. The dataset includes information on layoffs by companies across the globe, covering attributes like company name, location, industry, total layoffs, and dates. The aim of the project is to transform the raw data into a clean, reliable, and usable dataset, making it ready for exploratory data analysis and revealing insights.
 
 ## Methodology
@@ -24,7 +26,6 @@ In this project I followed a standard approach to data cleaning, which was broke
 
 4. **Removing Unnecessary Columns**  
    Columns irrelevant to the analysis, such as those used for intermediate processing, were removed as they are not required.
-
 
 
 ## Exploratory Data Analysis
