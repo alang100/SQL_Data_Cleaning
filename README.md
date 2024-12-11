@@ -1,34 +1,38 @@
-I have been using MS SQL extensively while working at DEWR for the past 12 months. I cannot showcase any of the SQL work I carry out there, so I have made a data cleaning project to demonstrate good working knowledge of data cleaning an untidy dataset in SQL and performing EDA (Exploratory Data Analysis) to reveal interesting and meaningful insights. This project was done using MySQL. In this repository, I have attached the original dataset, the SQL file containing my code and a PDF presentation which consists mainly of screenshots of the code combined with the output, so it is easier to follow the results, rather than just reading the code. They are available on the following links:
+I have been using MS SQL extensively while working at DEWR for the past 12 months. I use SQL extensively at DEWR, but I cannot showcase any of the SQL work I carry out there. Most of the tables I use at work are of high quality with clean data. I thought it would be interesting to make cleaning project to demonstrate good working knowledge of data cleaning an untidy dataset in SQL and performing EDA (Exploratory Data Analysis) to reveal interesting and meaningful insights. This project was done using MySQL. There is only one table used in the project, so there are no joins involved, which is something I do regularly at work. I am planning on creating a more detailed SQL project in the near future.
+
+In this repository, I have attached the original dataset, the SQL file containing my code and a PDF presentation which consists mainly of screenshots of the code combined with the output, making it is easier for the viewer to follow the results, rather than just reading the code. They are available on the following links:
 
 1. The original dataset
 2. My SQL code, using MySQL
-3. The PDF presentation which mainly shows screenshots of the code along with the outputs
+3. The PDF presentation of the code along with the outputs
 
 # Data Cleaning and Analysis Using SQL
 
 ## Introduction
-Data cleaning is a an important step in the data analysis pipeline. This project demonstrates the process of cleaning a global layoffs dataset using SQL. The dataset includes information on layoffs by companies across the globe, covering attributes like company name, location, industry, total layoffs, and dates. The aim of the project is to transform the raw data into a clean, reliable, and usable dataset, ready for exploratory data analysis and insights generation.
+Data cleaning is one of the most important steps in preparing data for meaningful analysis. This project focuses on cleaning a dataset of global layoffs during the COVID-19 pandemic using SQL, with the goal of transforming raw, messy data into a clean and reliable dataset. The dataset includes information on layoffs by companies across the globe, covering attributes like company name, location, industry, total layoffs, and dates. The aim of the project is to transform the raw data into a clean, reliable, and usable dataset, making it ready for exploratory data analysis and revealing insights.
 
 ## Methodology
-This data cleaning process involved four key steps:
+In this project I followed a standard approach to data cleaning, which was broken down into four key steps:
 
 1. **Removing Duplicate Rows**  
-   Duplicates were identified and removed to ensure data integrity. Special care was taken to preserve valid records of layoffs occurring on different dates or in different locations.
+   Duplicate rows were identified and removed to ensure data integrity. Care was taken to keep valid records of layoffs occurring on different dates or in different locations from the same company, etc.
 
 2. **Standardization of Data**  
-   Text-based columns were standardized by trimming unnecessary spaces, correcting misspellings, and normalizing inconsistent entries (e.g., location names like "Dusseldorf" and "Düsseldorf"). Numeric fields, such as percentages, were also adjusted for consistency and readability.
+   Text-based columns were standardized by trimming unnecessary spaces, correcting misspellings, and normalizing inconsistent entries (e.g., location names like "Dusseldorf" and "Düsseldorf"). Numeric fields, such as percentages, were also adjusted to be consistent making them easier to understand.
 
 3. **Handling Missing Values**  
-   Missing values were addressed through a combination of imputation (e.g., assigning industries based on company name) and exclusion where imputation was impractical. For instance, records with both `total_laid_off` and `percentage_laid_off` missing were removed.
+   Missing data was addressed by either imputing values (e.g., assigning industries based on company names) or removing rows where imputation was not practical. For example, records with both `total_laid_off` and `percentage_laid_off` missing were removed as they gave no information as to the amount of layoffs.
 
 4. **Removing Unnecessary Columns**  
-   Columns irrelevant to the analysis, such as those used for intermediate processing, were dropped to streamline the dataset.
+   Columns irrelevant to the analysis, such as those used for intermediate processing, were removed as they are not required.
+
+
 
 ## Exploratory Data Analysis
-After cleaning the data, exploratory queries were conducted to derive insights:
+After cleaning the data, exploratory queries were conducted to discover insights:
 
 - **Timeframe Covered:**  
-  The dataset spans from March 2020 to March 2023, highlighting layoffs during and after the COVID-19 pandemic.
+  The dataset ranges from March 2020 to March 2023, showing the number of layoffs during and after the COVID-19 pandemic.
 
 - **Key Statistics:**  
   - Total layoffs: 383,659  
@@ -38,71 +42,17 @@ After cleaning the data, exploratory queries were conducted to derive insights:
   Layoffs peaked in January 2023 with 84,714 layoffs, followed by significant layoffs in November 2022 and February 2023.
 
 - **Industries Affected:**  
-  The Consumer and Retail industries experienced the highest layoffs, with 44,782 and 43,613 respectively. Manufacturing was the least affected.
+  The Consumer and Retail industries experienced the highest layoffs, with 44,782 and 43,613 respectively. Manufacturing was the least affected industry.
 
 - **Countries Affected:**  
-  The USA and India recorded the highest layoffs, reflecting their large populations and workforce sizes.
+  The USA and India recorded the highest layoffs, they also have very large populations and workforce sizes.
 
-- **Company Rankings:**  
-  Amazon, Google, and Meta were among the companies with the largest layoffs.
+- **Layoffs by Company:**  
+  Amazon, Google, and Meta were the companies with the largest layoffs in this dataset.
 
-## Major Insights
-- **COVID-19 Impact:**  
-  The pandemic significantly affected layoffs, especially in industries like Consumer, Retail, and Technology.
 
-- **Regional Disparities:**  
-  Layoffs were concentrated in specific countries, highlighting regional economic and business trends.
-
-- **Economic Challenges:**  
-  High layoff numbers in late 2022 and early 2023 point to broader economic challenges beyond the pandemic.
-
-## Skills Demonstrated
-This project highlights several skills critical to a data analyst's role:
-- **SQL Proficiency:**  
-  Leveraging advanced SQL features like Common Table Expressions (CTEs), Window Functions, and Aggregations for data transformation and analysis.
-  
-- **Data Cleaning Expertise:**  
-  Handling duplicates, standardizing data, correcting typos, and imputing missing values effectively.
-
-- **Exploratory Data Analysis (EDA):**  
-  Deriving meaningful insights through structured queries and ranking mechanisms.
-
-- **Problem-Solving:**  
-  Addressing inconsistencies in raw data and ensuring data quality for analysis.
-
-- **Attention to Detail:**  
-  Carefully validating changes and maintaining data integrity throughout the process.
-
-## Conclusion
-This project demonstrates the importance of data cleaning as a foundation for reliable analysis. By transforming messy, inconsistent data into a structured and accurate dataset, actionable insights were derived about global layoffs. The process showcases essential skills required for data analytics, making it an excellent portfolio project for aspiring data analysts. This project also highlights how clean data can empower decision-making in areas like workforce management, economic planning, and organizational strategy.
-
----
-
-# Data Cleaning and Analysis Using SQL
-
-## Introduction
-Data cleaning is one of the most crucial steps in preparing data for meaningful analysis. This project focuses on cleaning a dataset of global layoffs using SQL, with the goal of transforming raw, messy data into a clean and reliable dataset. The dataset includes information such as company names, locations, industries, and layoff numbers. By cleaning this data, we can ensure accuracy and consistency, making it ready for analysis and insights.
-
-## Methodology
-The project followed a systematic approach to data cleaning, broken down into four key steps:
-
-1. **Removing Duplicates**  
-   Duplicate rows were identified and removed to maintain the integrity of the dataset. Care was taken to retain valid entries where layoffs occurred in different locations or on different dates.
-
-2. **Standardizing Data**  
-   Text fields were cleaned by trimming excess spaces, correcting typos, and normalizing inconsistent entries, such as variations in location names. Numeric fields were formatted for consistency, making the dataset easier to interpret.
-
-3. **Handling Missing Values**  
-   Missing data was addressed by either imputing values (e.g., assigning industries based on company names) or removing rows where imputation was not feasible. For instance, rows with both `total_laid_off` and `percentage_laid_off` missing were excluded.
-
-4. **Dropping Unnecessary Columns**  
-   Columns used only for intermediate steps, such as row numbering, were removed to streamline the dataset.
-
-## Exploratory Data Analysis
+  ## Exploratory Data Analysis
 After the dataset was cleaned, several exploratory queries were performed to uncover insights:
-
-- **Timeframe Covered:**  
-  The dataset spans from March 2020 to March 2023, capturing layoffs during the COVID-19 pandemic and its aftermath.
 
 - **Key Metrics:**  
   - Total layoffs: 383,659  
@@ -121,33 +71,37 @@ After the dataset was cleaned, several exploratory queries were performed to unc
   Amazon, Google, and Meta were among the companies with the highest total layoffs.
 
 ## Major Insights
-- **Pandemic Effects:**  
-  Layoffs surged during the COVID-19 pandemic, heavily affecting industries like Consumer, Retail, and Technology.
+- **COVID-19 Impact on Layoffs:**  
+  The pandemic and consequent lockdowns significantly affected layoffs, especially in the industries of Consumer, Retail, and Technology.
 
-- **Regional Patterns:**  
-  The data shows layoffs were concentrated in specific countries, reflecting broader economic and business trends.
+- **National Disparities:**  
+  Layoffs were concentrated in specific countries. The US and India had by far the largest. They are among the largest populations.
+  The Netherlands and Sweden were next, they have much smaller populations.
+  The countries with the least number of layoffs were Poland (25) and Chile (30). This is undoubtedly more of a reflection on the dataset, in which data was not collected well for companies in these regions. Layoffs would have certainly been far higher in these countries.
 
-- **Post-Pandemic Challenges:**  
-  The increase in layoffs in late 2022 and early 2023 points to economic pressures extending beyond the pandemic.
+- **Economic Challenges:**  
+  High layoff numbers in late 2022 and early 2023 indicate to broader economic challenges likely caused by the pandemic.
+
 
 ## Skills Demonstrated
-This project demonstrates several critical skills for data analysts:
-- **SQL Expertise:**  
-  The use of advanced SQL features, including CTEs, window functions, and aggregations, to clean and analyze data effectively.
+This project involved several skills that are vital to a data analyst's role:
+- **SQL Proficiency:**  
+  The use of advanced SQL features, like Common Table Expressions (CTEs), Window Functions, and Aggregations for data transformation and analysis.
   
 - **Data Cleaning:**  
-  Addressing issues like duplicates, typos, inconsistencies, and missing values to ensure the dataset’s quality.
+  Handling duplicates, standardizing data, correcting incorrect text, and choosing to impute missing values effectively or not to impute.
 
-- **Exploratory Data Analysis:**  
+- **Exploratory Data Analysis (EDA):**  
   Writing queries to reveal trends and insights within the data.
 
 - **Attention to Detail:**  
-  Ensuring accuracy and consistency throughout the data cleaning process.
-
-- **Problem-Solving:**  
-  Handling challenges like incomplete data and ambiguous values with practical solutions.
+  Carefully validating changes and maintaining data integrity throughout the process.
 
 ## Conclusion
-This project highlights the importance of data cleaning as a foundational step in any analysis. By systematically addressing inconsistencies and gaps in the dataset, we transformed raw data into a structured format suitable for meaningful insights. The process revealed valuable trends in global layoffs, particularly during and after the COVID-19 pandemic. This project showcases essential data analysis skills, making it a strong addition to a portfolio for anyone pursuing a career in data analytics.
+This is a project that highlights the importance of data cleaning as a foundational step in any analysis. Datasets are often
+not perfectly clean, so there are many important steps to ensure that they have been prepared optimally and as accurately as possible.
+By searching for irregularities and errors in the dataset, I transformed the raw data into a structured format suitable for analysis and possible modelling.
 
-
+The explorartory data analysis revealed important trends in global layoffs during the COVID-19 pandemic. 
+In this project I learned and demonstrated essential data preparation and analysis skills utilising SQL. 
+Future work will be to expand on the EDA and possible make a Power BI dashboard.
