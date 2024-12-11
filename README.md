@@ -1,3 +1,5 @@
+# SQL Data Cleaning
+
 I have been using MS SQL extensively while working at DEWR for the past 12 months. I use SQL extensively at DEWR, but I cannot showcase any of the SQL work I carry out there. Most of the tables I use at work are of high quality with clean data. I thought it would be interesting to make cleaning project to demonstrate good working knowledge of data cleaning an untidy dataset in SQL and performing EDA (Exploratory Data Analysis) to reveal interesting and meaningful insights. This project was done using MySQL. There is only one table used in the project, so there are no joins involved, which is something I do regularly at work. I am planning on creating a more detailed SQL project in the near future.
 
 In this repository, I have attached the original dataset, the SQL file containing my code and a PDF presentation which consists mainly of screenshots of the code combined with the output, making it is easier for the viewer to follow the results, rather than just reading the code. They are available on the following links:
