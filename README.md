@@ -7,6 +7,8 @@ In this repository, I have attached the original dataset, the SQL file containin
 - The [project SQL code](Data%20Cleaning%20Project%20and%20EDA%20-%20Layoffs%20CSV%20file.sql)
 - The [code presentation PDF](SQL%20Data%20Cleaning%20Project.pdf) file
 
+*Note: To download a file, click the link and then use the download button on the top right of the GitHub interface.*
+
 ---
 
 ## Project Introduction
